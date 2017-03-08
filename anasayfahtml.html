@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kutuphanem</title>
+<link href="anas.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+	$(".kucuk").mouseover(function(){
+		var src = $(this).attr("src");
+		$("#buyuk").attr('src',src);
+	})
+
+});
+
+
+</script>
+
+<style type="text/css">
+#container {
+	background-color: #FFF;
+	padding: 10px;
+	height: auto;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #CCC;
+}
+#header {
+	height: 150px;
+	width: 980px;
+}
+#logo {
+	height: 150px;
+	width: 600px;
+	float: left;
+}
+#menu {
+	background-image: url(turuncusari.jpg);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 380px;
+	float: left;
+	margin-top: 80px;
+	background-color: #FC0;
+}
+#container #header #menu ul {
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+#container #header #menu ul li a {
+	height: 40px;
+	width: 110px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+#container #header #menu ul li a:hover {
+	height: 40px;
+	width: 110px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+	background-color: #6CC;
+}
+#ara {
+	display: inline;
+	height: 40px;
+	width: 130px;
+
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+<div id="container">
+  <div id="header">
+    <div id="logo"><img src="logoson.jpg" width="600" height="150" /></div>
+    <div id="menu">
+      <ul>
+        <li><a href="anasayfahtml.html">Ana Sayfa</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+        <li>
+        	<div id="ara">
+                <form action="" method="get" id="searchform">
+                    <label for="s">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <input type="text" value="" placeholder="Kitap Ara" id="s"/>  
+                 </form>   
+    		</div>
+    	</li>
+      </ul>
+    </div>
+  </div>
+  <div id="clear-header"></div>
+  
+</div>
+
+<div id="orta">
+
+    <div class="sol-taraf">
+    
+    	<div class="oturumac">
+        
+        	<div class="ust">
+            Oturum Aç
+            </div>
+            
+        	<div class="alt">
+            
+                <div class="KullaniciAdi">
+                    <span>Kullanıcı Adı</span>
+                    <asp:TextBox ID="txtKullaniciadi" CssClass="textbox" runat="server"/>
+                </div>
+                <div class="sifre">
+                    <span>Şifre</span>
+                    <asp:TextBox ID="txtSifre" CssClass="textbox" runat="server"/>
+                </div>
+                
+                <asp:Button ID="kayitButon" CssClass="kayitButon" Text="Oturum Aç" runat="server"/>
+                <asp:Label ID="sonucLabel" Text="" runat="server"/>
+            </div>
+        </div>
+        
+        <div class="duyuru">
+        	<div class="ust">
+            Duyurular
+            </div>
+            
+        	<div class="alt">
+            </div>
+        </div>
+        
+    </div>
+    <div id="icerik">
+    <img src="sld1.png" width="630" id="buyuk"><br><br>
+	<img src="sld1.png" width="157.5" class="kucuk">
+	<img src="sld2.png" width="157.5" class="kucuk">
+	<img src="sld3.png" width="157.5" class="kucuk">
+	<img src="sld4.png" width="157.5" class="kucuk">
+    </div>
+</div>
+
+<footer>GEBZE TEKNİK ÜNİVERSİTESİ © 2016</footer>
+
+</body>
+</html>
